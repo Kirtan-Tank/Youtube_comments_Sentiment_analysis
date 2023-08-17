@@ -3,3 +3,4 @@ numpy==1.23.3
 pandas==1.5.0
 scikit_learn==1.1.1
 streamlit==1.19.0
+tensorflow==2.12.0
