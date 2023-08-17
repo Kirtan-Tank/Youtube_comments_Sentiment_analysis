@@ -21,33 +21,13 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 st.title('Sentiment Analysis App')
 
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
-
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
+# Animation with lottie (loading gif files throgh url)
+def lottieurl_load(url: str):
+    r= requests.get(url)
+    if r.status_code !=200:
         return None
     return r.json()
-    
-
-lottie_coding = load_lottiefile("y1.json")  # replace link to local lottie file
-lottie_hello = load_lottieurl("https://lottie.host/ba5f1ab0-4983-4652-8d20-7ccbf72c67da/XIs15NIuG8.json")
-
-st_lottie(
-    lottie_hello,
-    speed=1,
-    reverse=False,
-    loop=True,
-    quality="low", # medium ; high
-    renderer="svg", # canvas
-    height=None,
-    width=None,
-    key=None,
-)
-
+lottie_img = lottieurl_load("https://lottie.host/ba5f1ab0-4983-4652-8d20-7ccbf72c67da/XIs15NIuG8.json")
 # Create a text input for user to enter custom text
 user_input = st.text_input("Enter your text:")
 
