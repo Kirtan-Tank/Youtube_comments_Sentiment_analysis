@@ -19,6 +19,8 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 st.title('Sentiment Analysis App')
 
+![Alt Text](relative_path_to_gif_file.gif)
+
 # Create a text input for user to enter custom text
 user_input = st.text_input("Enter your text:")
 
@@ -38,7 +40,7 @@ if user_input:
         st.write("☹️")
     elif predicted_sentiment == 1.0:
         st.write("Neutral sentiment")
-        st.write("🙂")
+        st.write("😐")
     else:
         st.write("Positive sentiment")
         st.write("🙂")
