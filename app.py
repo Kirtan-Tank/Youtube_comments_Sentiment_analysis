@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_lottie import st_lottie
+import json
 import pandas as pd
 import numpy as np
 from keras.preprocessing.text import Tokenizer
@@ -23,6 +25,19 @@ st.title('Sentiment Analysis App')
 # image_path = "Youtube_comments_Sentiment_analysis/yt1.gif"
 image_path="yt1.gif"
 st.image(image_path, caption='YouTube Comments Sentiment Analysis GIF', use_column_width=True)
+
+lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
+st_lottie(
+    lottie_hello,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", # medium ; high
+    renderer="svg", # canvas
+    height=None,
+    width=None,
+    key=None,
+)
 
 # Create a text input for user to enter custom text
 user_input = st.text_input("Enter your text:")
