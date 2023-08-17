@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
+from keras.utils import pad_sequences
 from keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 
