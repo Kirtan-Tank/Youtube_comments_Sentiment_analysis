@@ -28,7 +28,7 @@ def lottieurl_load(url: str):
     if r.status_code !=200:
         return None
     return r.json()
-lottie_img = lottieurl_load("https://assets9.lottiefiles.com/packages/lf20_ggt4iszh.json")
+lottie_img = lottieurl_load("https://lottie.host/ba5f1ab0-4983-4652-8d20-7ccbf72c67da/XIs15NIuG8.json")
 # Create a text input for user to enter custom text
 user_input = st.text_input("Enter your text:")
 
