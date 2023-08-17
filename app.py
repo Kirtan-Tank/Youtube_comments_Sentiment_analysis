@@ -23,7 +23,7 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 # st.title('Sentiment Analysis App')
 st.columns(3)[1].title("CommentVibes")
 
-st.columns(3)[1].markdown("_YouTube Comments Sentiment Analyze_")
+st.columns(3)[1].markdown("_Analyzing Comment Emotions _")
 
 # Animation with lottie (loading gif files throgh url)
 def lottieurl_load(url: str):
@@ -53,17 +53,17 @@ if user_input:
 
     if predicted_sentiment == 0.0:
         st.write("Negative sentiment ")
-        st.write("☹️")
+        # st.write("☹️")
         lottie_img_neg = lottieurl_load("https://lottie.host/4440e505-65be-4ae1-8430-5eedfe2d8586/GKwBf1NDeW.json")
         st_lottie(lottie_img_neg,speed=1,reverse=False,loop=True,quality="medium",height=250,width=250,key=None)
 
     elif predicted_sentiment == 1.0:
         st.write("Neutral sentiment")
-        st.write("😐")
+        # st.write("😐")
         lottie_img_neut = lottieurl_load("https://lottie.host/146ada86-c643-47a1-8e22-9f90d7b8ab17/5kAs5bkcXN.json")
         st_lottie(lottie_img_neut,speed=1,reverse=False,loop=True,quality="medium",height=250,width=250,key=None)
     else:
         st.write("Positive sentiment")
-        st.write("🙂")
+        # st.write("🙂")
         lottie_img_pos = lottieurl_load("https://lottie.host/92d72349-15d0-4421-a3c6-88a9f8f1aed2/dRMzaFPt8E.json")
         st_lottie(lottie_img_pos,speed=1,reverse=False,loop=True,quality="medium",height=250,width=250,key=None)
