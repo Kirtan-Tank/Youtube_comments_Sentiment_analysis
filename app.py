@@ -21,7 +21,7 @@ tokenizer = Tokenizer()
 tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 # st.title('Sentiment Analysis App')
-st.columns(3)[1].title("𝐂𝐨𝐦𝐦𝐞𝐧𝐭𝐕𝐢𝐛𝐞𝐬")
+st.columns(3)[1].title("𝓒𝓸𝓶𝓶𝓮𝓷𝓽𝓥𝓲𝓫𝓮𝓼")
 
 st.columns(3)[1].markdown("~ ~ _Analyzing Comment Emotions_")
 
