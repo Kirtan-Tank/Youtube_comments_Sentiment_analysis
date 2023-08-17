@@ -39,7 +39,7 @@ with st.columns(3)[1]:
 
 # Create a text input for user to enter custom text
 st.header("Enter your text:")
-user_input = st.text_input()
+user_input = st.text_input("")
 
 if user_input:
     # Preprocess the user input
