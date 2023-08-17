@@ -21,7 +21,8 @@ tokenizer = Tokenizer()
 tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 # st.title('Sentiment Analysis App')
-st.columns(3)[1].header("Sentiment Analysis App")
+st.columns(3)[1].title("CommentVibes")
+st.columns(3)[1].header("YouTube Comments Sentiment Analyze")
 
 # Animation with lottie (loading gif files throgh url)
 def lottieurl_load(url: str):
