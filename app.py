@@ -33,7 +33,7 @@ def load_lottieurl(url: str):
     return r.json()
     
 
-lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
+lottie_coding = load_lottiefile("y1.json")  # replace link to local lottie file
 lottie_hello = load_lottieurl("https://lottie.host/ba5f1ab0-4983-4652-8d20-7ccbf72c67da/XIs15NIuG8.json")
 
 st_lottie(
