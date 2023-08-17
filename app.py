@@ -33,9 +33,12 @@ if user_input:
 
     st.write(f'Predicted Sentiment: {predicted_sentiment}')
 
-    if predicted_sentiment == 'negative':
-        st.write("Negative sentiment")
-    elif predicted_sentiment == 'neutral':
+    if predicted_sentiment == 0.0:
+        st.write("Negative sentiment ")
+        st.write("☹️")
+    elif predicted_sentiment == 1.0:
         st.write("Neutral sentiment")
+        st.write("🙂")
     else:
         st.write("Positive sentiment")
+        st.write("🙂")
