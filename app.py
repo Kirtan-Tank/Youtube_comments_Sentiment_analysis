@@ -3,6 +3,7 @@ from streamlit_lottie import st_lottie
 import json
 import pandas as pd
 import numpy as np
+import requests
 from keras.preprocessing.text import Tokenizer
 from keras.utils import pad_sequences
 from keras.models import load_model
