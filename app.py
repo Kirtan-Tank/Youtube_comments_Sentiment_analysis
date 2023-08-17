@@ -19,7 +19,7 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 st.title('Sentiment Analysis App')
 
-![Alt Text](relative_path_to_gif_file.gif)
+![Alt Text](Youtube_comments_Sentiment_analysis/yt1.gif)
 
 # Create a text input for user to enter custom text
 user_input = st.text_input("Enter your text:")
