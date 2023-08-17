@@ -20,7 +20,8 @@ label_encoder.classes_ = np.load('label_encoder.npy')
 tokenizer = Tokenizer()
 tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
-st.title('Sentiment Analysis App')
+# st.title('Sentiment Analysis App')
+st.columns(3)[1].header("Sentiment Analysis App")
 
 # Animation with lottie (loading gif files throgh url)
 def lottieurl_load(url: str):
