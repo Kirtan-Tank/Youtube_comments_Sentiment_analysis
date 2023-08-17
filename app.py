@@ -20,7 +20,8 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 st.title('Sentiment Analysis App')
 
 # Load and display the GIF using st.image()
-image_path = "Youtube_comments_Sentiment_analysis/yt1.gif"
+# image_path = "Youtube_comments_Sentiment_analysis/yt1.gif"
+image_path="yt1.gif"
 st.image(image_path, caption='YouTube Comments Sentiment Analysis GIF', use_column_width=True)
 
 # Create a text input for user to enter custom text
