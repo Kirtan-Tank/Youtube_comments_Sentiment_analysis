@@ -21,14 +21,15 @@ tokenizer.word_index = np.load('tokenizer.npy', allow_pickle=True).item()
 
 st.title('Sentiment Analysis App')
 
-# Load and display the GIF using st.image()
-# image_path = "Youtube_comments_Sentiment_analysis/yt1.gif"
-image_path="yt1.gif"
-st.image(image_path, caption='YouTube Comments Sentiment Analysis GIF', use_column_width=True)
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
-lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
+yt1_gif = load_lottieurl("https://lottie.host/ba5f1ab0-4983-4652-8d20-7ccbf72c67da/XIs15NIuG8.json")
 st_lottie(
-    lottie_hello,
+    yt1_gif,
     speed=1,
     reverse=False,
     loop=True,
